@@ -8,7 +8,7 @@ Fluent中设置均为默认设置，对Wall处Roughness均设置为0，速度进
 ![VelocityCompareAtX](https://github.com/MemoriseXuxu/OpenFOAM_Tutorials/blob/master/Tee%20Junction/Compare_UatX.jpeg)  
 
 
-https://user-images.githubusercontent.com/48404183/157583052-d07031c6-4ca6-428c-94db-678e6c5b19a3.mp4
+[U_Animation](https://user-images.githubusercontent.com/48404183/157583052-d07031c6-4ca6-428c-94db-678e6c5b19a3.mp4)  
 
-https://github.com/MemoriseXuxu/OpenFOAM_Tutorials/blob/master/Tee%20Junction/Pressure_Video.mp4
+[Pressure_Animation](https://github.com/MemoriseXuxu/OpenFOAM_Tutorials/blob/master/Tee%20Junction/Pressure_Video.mp4)
 
