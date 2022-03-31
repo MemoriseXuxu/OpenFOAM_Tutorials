@@ -5,4 +5,4 @@
 // - 定义Interface，使用位于system/topoSetDict,命令 topoSet
 // - 其实以上步骤，也可以使用createPatch进行，这里不对该方法进行介绍
 // - 进行并行计算，可以根据自身计算条件进行核数分配 
-![video]https://github.com/MemoriseXuxu/OpenFOAM_Tutorials/blob/master/rotationPlate/streamline.mp4
+![video](https://github.com/MemoriseXuxu/OpenFOAM_Tutorials/blob/master/rotationPlate/streamline.mp4)
