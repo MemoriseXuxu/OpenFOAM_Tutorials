@@ -1,0 +1,107 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2112                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+10
+(
+    AMI1_1
+    {
+        type            cyclicAMI;
+        nFaces          1838;
+        startFace       271197;
+        matchTolerance  0.001;
+        transform       noOrdering;
+        neighbourPatch  AMI1_2;
+    }
+
+    AMI2_1
+    {
+        type            cyclicAMI;
+        nFaces          920;
+        startFace       273035;
+        matchTolerance  0.001;
+        transform       noOrdering;
+        neighbourPatch  AMI2_2;
+    }
+
+    wall_fan
+    {
+        type            wall;
+        nFaces          3044;
+        startFace       273955;
+    }
+
+    fan
+    {
+        type            wall;
+        nFaces          1170;
+        startFace       276999;
+    }
+
+    AMI1_2
+    {
+        type            cyclicAMI;
+        nFaces          894;
+        startFace       278169;
+        matchTolerance  0.001;
+        transform       noOrdering;
+        neighbourPatch  AMI1_1;
+    }
+
+    wall_inlet
+    {
+        type            wall;
+        nFaces          7084;
+        startFace       279063;
+    }
+
+    inlet
+    {
+        type            patch;
+        nFaces          430;
+        startFace       286147;
+    }
+
+    AMI2_2
+    {
+        type            cyclicAMI;
+        nFaces          790;
+        startFace       286577;
+        matchTolerance  0.001;
+        transform       noOrdering;
+        neighbourPatch  AMI2_1;
+    }
+
+    wall_outlet
+    {
+        type            wall;
+        nFaces          5698;
+        startFace       287367;
+    }
+
+    outlet
+    {
+        type            patch;
+        nFaces          430;
+        startFace       293065;
+    }
+
+)
+
+
+// ************************************************************************* //

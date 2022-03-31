@@ -1,0 +1,1 @@
+1 - 网格分成了3个，需要在OpenFOAM中进行网格合并，命令为mergeMesh X/ Y/ -overwrite,具体用法见相关教程
