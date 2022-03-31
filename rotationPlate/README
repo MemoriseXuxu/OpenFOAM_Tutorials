@@ -1,1 +1,7 @@
-1 - 网格分成了3个，需要在OpenFOAM中进行网格合并，命令为mergeMesh X/ Y/ -overwrite,具体用法见相关教程
+// - 网格分成了3个，需要在OpenFOAM中进行网格合并，命令为mergeMesh X/ Y/ -overwrite,具体用法见相关教程
+// - 首先进行checkMesh操作，必要步骤，不可省略，不然后面setSet中不能得到相关region的参数
+// - 定义旋转边界，命令setSet，输入help命令，使用命令cellZoneSet rotor new setToCellZone region0。其中，region取决于旋转域的区域，rotor命名随意，但是该命名要去constant/dynamicMeshDict中cellZone对应，此处命名为rotor
+// - 修改边界BC属性，创建cyclicAMI，使用位于system/changeDictionaryDict，命令 changeDictionary
+// - 定义Interface，使用位于system/topoSetDict,命令 topoSet
+// - 其实以上步骤，也可以使用createPatch进行，这里不对该方法进行介绍
+// - 进行并行计算，可以根据自身计算条件进行核数分配
