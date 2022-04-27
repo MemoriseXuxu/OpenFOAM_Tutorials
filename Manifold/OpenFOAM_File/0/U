@@ -43,7 +43,6 @@ boundaryField
         $outlet1 ;
     }
 
-
     wall-volume_volume
     {
         type      noSlip ;
